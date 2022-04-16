@@ -10,9 +10,12 @@ public class InVoiceSummary {
     public InVoiceSummary() {
     }
 
-    public InVoiceSummary(int numberOfRides, double totalFare) {
+    public InVoiceSummary(int numberOfRides, double totalFare, String rideType) {
         this.numberOfRides = numberOfRides;
         this.totalFare = totalFare;
+    }
+
+    public InVoiceSummary(int numberOfRides, double totalFare) {
     }
 
     public InVoiceSummary getInvoiceSummary() {
@@ -32,4 +35,5 @@ public class InVoiceSummary {
     public int hashCode() {
         return Objects.hash(numberOfRides, totalFare, avgFare);
     }
+
 }
